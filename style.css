@@ -62,6 +62,7 @@ h1 {
     font-size: 0.8;
 }
 
-.pokemon .info .name {
-    margin-top: 0;
+.pokemon .info .name{
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
 }

@@ -20,10 +20,21 @@ const colors = {
 
 const fetchPokemons = async () => {
     for(let i = 1; i <= pokemon_count; i++) {
-        console.log(i)
+        // console.log(i)
         await getPokemon(i);
     }
 }
 
 
-const getPokemon = async (id)
+const getPokemon = async (id) => {
+    const url = 'https://pokeapi.co/api/v2/pokemon'
+    const res = await fetch(url)
+    const data = await res.json();
+    console.log(data)
+}
+
+
+
+
+
+// fetchPokemons();
